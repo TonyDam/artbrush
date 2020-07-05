@@ -1,0 +1,6 @@
+framework module Pods_artbrush {
+  umbrella header "Pods-artbrush-umbrella.h"
+
+  export *
+  module * { export * }
+}
