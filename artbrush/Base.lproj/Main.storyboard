@@ -80,7 +80,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sdr-xA-MHQ">
                                 <rect key="frame" x="40" y="84" width="334" height="300.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZa-E1-6ke">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZa-E1-6ke">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -91,7 +91,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiN-ut-4uq">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiN-ut-4uq">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -102,7 +102,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-hT-PCW">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-hT-PCW">
                                         <rect key="frame" x="0.0" y="140" width="334" height="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -123,6 +123,7 @@
                                         <state key="normal" title="S'enregistrer"/>
                                         <connections>
                                             <action selector="signUpTapped:" destination="ecO-i0-Wmu" eventType="touchUpInside" id="Q6q-qw-vTL"/>
+                                            <segue destination="a72-GI-Na5" kind="presentation" id="XO0-FK-Zxr"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tq3-ti-Fah">
@@ -160,33 +161,38 @@
             </objects>
             <point key="canvasLocation" x="2026.0869565217392" y="-98.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="ILY-2D-zR4">
             <objects>
-                <viewController id="ALg-CB-JbO" sceneMemberID="viewController">
+                <viewController id="ALg-CB-JbO" customClass="CameraViewController" customModule="artbrush" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jox-Ba-lXu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.24249881509999999" green="0.25913995499999998" blue="0.32841581110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="SLV-mo-XW8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="picto-add-picture" id="jZr-hv-Otr"/>
+                    <tabBarItem key="tabBarItem" title="" image="picto-add-picture" selectedImage="picto-add-picture" id="jZr-hv-Otr">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <color key="badgeColor" red="0.96935194729999996" green="0.50807857509999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQ8-6x-vjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3971" y="-1186"/>
         </scene>
-        <!--View Controller-->
+        <!--Discover View Controller-->
         <scene sceneID="kuT-vk-pDR">
             <objects>
-                <viewController id="PWY-kG-gx8" sceneMemberID="viewController">
+                <viewController id="PWY-kG-gx8" customClass="DiscoverViewController" customModule="artbrush" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N0X-VG-DPn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.24249881509999999" green="0.25913995499999998" blue="0.32841581110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="zu4-Jn-my2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="picto-search" id="oY7-3T-N8M"/>
+                    <tabBarItem key="tabBarItem" title="" image="picto-search" selectedImage="picto-search" id="oY7-3T-N8M">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sya-xy-vHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,44 +203,50 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="scF-R0-zj3" customClass="HomeViewController" customModule="artbrush" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3C-RR-Mgp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.24249881509999999" green="0.25913995499999998" blue="0.32841581110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="B9L-k0-y05"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="picto-home" id="ClN-WP-5nz"/>
+                    <tabBarItem key="tabBarItem" title="" image="picto-home" selectedImage="picto-home" id="ClN-WP-5nz">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J25-0g-P7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3979.7101449275365" y="152.67857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Activity View Controller-->
         <scene sceneID="b7q-Fu-Nuf">
             <objects>
-                <viewController id="JLk-nf-LAs" sceneMemberID="viewController">
+                <viewController id="JLk-nf-LAs" customClass="ActivityViewController" customModule="artbrush" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OpG-aq-H1w">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.24249881509999999" green="0.25913995499999998" blue="0.32841581110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ui1-MW-a9K"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="picto-heart" id="NAa-oc-AZ2"/>
+                    <tabBarItem key="tabBarItem" title="" image="picto-heart" selectedImage="picto-heart" id="NAa-oc-AZ2">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UnC-hP-2mT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3961" y="830"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="skX-6s-tRC">
             <objects>
-                <viewController id="PBR-r3-nDp" sceneMemberID="viewController">
+                <viewController id="PBR-r3-nDp" customClass="ProfileViewController" customModule="artbrush" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p5g-xh-94c">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.24249881509999999" green="0.25913995499999998" blue="0.32841581110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fcX-fh-UCv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="picto-profile" id="mPH-WY-x4l"/>
+                    <tabBarItem key="tabBarItem" title="" image="picto-profile" selectedImage="picto-profile" id="mPH-WY-x4l">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8w-iX-DO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,7 +267,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fFz-yz-HLt">
                                 <rect key="frame" x="40" y="84" width="334" height="230.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tm4-AC-Emb">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tm4-AC-Emb">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -266,7 +278,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Jt-rH-v2E">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Jt-rH-v2E">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -287,6 +299,7 @@
                                         <state key="normal" title="Se connecter"/>
                                         <connections>
                                             <action selector="loginTapped:" destination="5IV-rg-uSJ" eventType="touchUpInside" id="hkE-jc-Ea5"/>
+                                            <segue destination="a72-GI-Na5" kind="presentation" id="WzS-fc-NMu"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yh5-mx-dsZ">
@@ -347,6 +360,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KTY-ZD-Jrd">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.082993514840000004" green="0.10259028520000001" blue="0.17607337240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="scF-R0-zj3" kind="relationship" relationship="viewControllers" id="apz-Qx-nJU"/>
@@ -370,4 +384,7 @@
         <image name="picto-profile" width="22" height="22"/>
         <image name="picto-search" width="32" height="22"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XO0-FK-Zxr"/>
+    </inferredMetricsTieBreakers>
 </document>

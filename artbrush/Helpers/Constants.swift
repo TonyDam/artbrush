@@ -6,15 +6,15 @@
 //  Copyright © 2020 TonyDam. All rights reserved.
 //
 
-import Foundation
-
-struct Constants {
-    
-    struct Storyboard {
-        
-        static let homeViewController = "HomeVC"
-        
-    }
-    
-    
-}
+//import Foundation
+//
+//struct Constants {
+//
+//    struct Storyboard {
+//
+//        static let homeViewController = "HomeVC"
+//
+//    }
+//
+//
+//}

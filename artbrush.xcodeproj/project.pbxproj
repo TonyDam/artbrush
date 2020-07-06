@@ -20,6 +20,10 @@
 		D9DA701824B277BE00FD3674 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA701724B277BE00FD3674 /* HomeViewController.swift */; };
 		D9DA701A24B277C900FD3674 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA701924B277C900FD3674 /* SignUpViewController.swift */; };
 		D9DA701C24B277D300FD3674 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA701B24B277D300FD3674 /* LoginViewController.swift */; };
+		D9DA701E24B2AFC000FD3674 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA701D24B2AFC000FD3674 /* DiscoverViewController.swift */; };
+		D9DA702024B2AFCA00FD3674 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA701F24B2AFCA00FD3674 /* CameraViewController.swift */; };
+		D9DA702224B2AFD300FD3674 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA702124B2AFD300FD3674 /* ProfileViewController.swift */; };
+		D9DA702424B2AFDC00FD3674 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DA702324B2AFDC00FD3674 /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		D9DA701724B277BE00FD3674 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D9DA701924B277C900FD3674 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D9DA701B24B277D300FD3674 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D9DA701D24B2AFC000FD3674 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		D9DA701F24B2AFCA00FD3674 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D9DA702124B2AFD300FD3674 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D9DA702324B2AFDC00FD3674 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 				D9DA701B24B277D300FD3674 /* LoginViewController.swift */,
 				D9DA701724B277BE00FD3674 /* HomeViewController.swift */,
 				D9DA6FFD24B2755200FD3674 /* ViewController.swift */,
+				D9DA701D24B2AFC000FD3674 /* DiscoverViewController.swift */,
+				D9DA701F24B2AFCA00FD3674 /* CameraViewController.swift */,
+				D9DA702124B2AFD300FD3674 /* ProfileViewController.swift */,
+				D9DA702324B2AFDC00FD3674 /* ActivityViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -241,10 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DA701E24B2AFC000FD3674 /* DiscoverViewController.swift in Sources */,
+				D9DA702024B2AFCA00FD3674 /* CameraViewController.swift in Sources */,
 				D9DA701624B2769400FD3674 /* Constants.swift in Sources */,
 				D9DA701A24B277C900FD3674 /* SignUpViewController.swift in Sources */,
 				D9DA6FFE24B2755200FD3674 /* ViewController.swift in Sources */,
 				D9DA6FFA24B2755200FD3674 /* AppDelegate.swift in Sources */,
+				D9DA702224B2AFD300FD3674 /* ProfileViewController.swift in Sources */,
+				D9DA702424B2AFDC00FD3674 /* ActivityViewController.swift in Sources */,
 				D9DA701C24B277D300FD3674 /* LoginViewController.swift in Sources */,
 				D9DA701424B2768A00FD3674 /* Utilities.swift in Sources */,
 				D9DA6FFC24B2755200FD3674 /* SceneDelegate.swift in Sources */,

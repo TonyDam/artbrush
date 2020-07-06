@@ -75,15 +75,15 @@ class SignUpViewController: UIViewController {
 
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 if err != nil {
-                    self.showError("Error creating user")
+                    self.showError("Veuillez réessayer.")
                 } else {
                     let db = Firestore.firestore()
                     db.collection("users").addDocument(data: ["username":username, "uid": result!.user.uid ]) { (error) in
                         if error != nil {
-                            self.showError("Error saving user data")
+                            self.showError("Erreur pendant la création de l'user.")
                         }
                     }
-                    self.transitionToHome()
+//                    self.transitionToHome()
                 }
             }
         }
@@ -94,12 +94,12 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 1
     }
     
-    func transitionToHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-        
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
-        
-    }
+//    func transitionToHome() {
+//        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+//        
+//        view.window?.rootViewController = homeViewController
+//        view.window?.makeKeyAndVisible()
+//        
+//    }
     
 }
